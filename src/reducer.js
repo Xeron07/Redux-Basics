@@ -13,7 +13,7 @@
 
 let lastId=0;
 
-//initialy redux will call reducer with undefined state
+//initially redux will call reducer with undefined state
 function reducer(state=[],action){
 
     switch(action.type){
