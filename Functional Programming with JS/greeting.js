@@ -55,3 +55,4 @@ const toLowerCase=str=>str.toLowerCase();
 const result=wrapInDiv(toLowerCase(trim(input)));
 
 //==================Composing && Piping=================//
+//in lodash.js
