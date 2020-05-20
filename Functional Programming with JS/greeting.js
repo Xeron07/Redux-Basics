@@ -5,6 +5,16 @@
  * then it is an higher order function
  */
 
+/**
+ * @function
+ * Pure @function is a function which will always
+ * return same result for same argument
+ * PURE FUNCTION
+ * No random values
+ * No current time/ date
+ * No Global State(DOM, files, deb, etc)
+ * No mutation of parameters
+ */
 
 /**
  * calling and passing function as an argument
