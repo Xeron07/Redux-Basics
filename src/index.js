@@ -1,12 +1,12 @@
 import store from "./store";
-
+import * as actions from "./action";
 //subscription to store
 const unsubscribe =store.subscribe(()=>{
     console.log("store changed");
 });
 
 store.dispatch({
-    type:"bugAdded",
+    type:actions.BUG_ADDED,
     paylaod :{
         description :"bug1"
     }
@@ -16,7 +16,7 @@ store.dispatch({
 unsubscribe();
 
 store.dispatch({
-    type:"bugRemoved",
+    type:BUG_REMOVED,
     paylaod :{
         id:1
     }
