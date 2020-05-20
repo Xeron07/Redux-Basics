@@ -14,7 +14,7 @@
 let lastId=0;
 
 //initially redux will call reducer with undefined state
-function reducer(state=[],action){
+export default function reducer(state=[],action){
 
     switch(action.type){
 
