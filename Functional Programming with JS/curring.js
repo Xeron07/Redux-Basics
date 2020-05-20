@@ -25,3 +25,7 @@
  // instead of 2 arguments
 //calling curring function
  addC(1)(2)//replace of add(1,2)
+
+
+ //By using arrow function
+ const addC2=a=>b=>a+b; //(a,b)=>a+b;
