@@ -33,3 +33,9 @@ transform(input);
 //left to right
 //pipe() is also a higher order function
 const transformFomPipe=pipe(trim,toLowerCase,wrapInDiv);
+
+
+ //using currying technique 
+const wrap=type=>str=>`<${type}>${trim}</${type}>`;
+const transformWithCurry=pipe(trim,toLowerCase,wrap("type"));//only passing function as argument
+transformWithCurry(input);
