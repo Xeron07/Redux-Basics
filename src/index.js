@@ -1,26 +1,16 @@
 import store from "./store";
-import * as actions from "./action";
+import {bugAdded,bugRemoved} from "./actions";
 //subscription to store
 const unsubscribe =store.subscribe(()=>{
     console.log("store changed");
 });
 
-store.dispatch({
-    type:actions.BUG_ADDED,
-    paylaod :{
-        description :"bug1"
-    }
-});
+store.dispatch(bugAdded("Bug 1"));
 
 //unsubscribinng the store subscription to prevent memory leak
 unsubscribe();
 
-store.dispatch({
-    type:BUG_REMOVED,
-    paylaod :{
-        id:1
-    }
-});
+store.dispatch(bugRemoved(1));
 
 console.log(store);
 console.log("Hello World!");

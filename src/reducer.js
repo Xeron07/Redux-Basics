@@ -10,7 +10,7 @@
  * }
  */
 
-import * as actions from "./action";
+import * as actions from "./actionType";
 let lastId=0;
 
 //initially redux will call reducer with undefined state
