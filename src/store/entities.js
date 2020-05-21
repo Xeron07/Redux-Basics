@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
 import projectsReducer from "./projects";
 
-combineReducers({
+export default combineReducers({
     projects:projectsReducer
 });
